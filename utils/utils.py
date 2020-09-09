@@ -41,6 +41,7 @@ def clean_tweets(lst):
     lst = np.core.defchararray.replace(lst, ")", "")
     lst = np.core.defchararray.replace(lst, "[", "")
     lst = np.core.defchararray.replace(lst, "]", "")
+    lst = np.core.defchararray.replace(lst, "*", "")
     return lst
 
 def clean_tweets_normal(lst):
